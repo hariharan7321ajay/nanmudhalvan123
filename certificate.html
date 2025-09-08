@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificates - Jarvis Edition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+            background: #141e30;
+            background: linear-gradient(120deg, #232526 0%, #141e30 100%);
+            color: #cfd8dc;
+            overflow-x: hidden;
+        }
+        .navbar {
+            background: rgba(0, 51, 102, 0.95);
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            box-shadow: 0 4px 16px rgba(60,180,250,0.08);
+        }
+        .navbar a {
+            color: #67e8f9;
+            text-decoration: none;
+            margin: 0 2rem;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 10px transparent;
+        }
+        .navbar a:hover,
+        .navbar a.active {
+            background: #002147;
+            color: #fff;
+            box-shadow: 0 0 18px #09c6f9ad;
+        }
+        .certificate-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        .title-jarvis {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: #67e8f9;
+            text-shadow: 0 0 14px #67e8f9;
+            margin-bottom: 2.5rem;
+            animation: glowTitle 2s ease-in-out infinite alternate;
+        }
+        @keyframes glowTitle {
+            from { text-shadow: 0 0 8px #09c6f9, 0 0 20px #67e8f980;}
+            to { text-shadow: 0 0 24px #66ffe4, 0 0 40px #66ffe455;}
+        }
+        .cert-card {
+            background: rgba(30,44,60,0.96);
+            min-width: 320px;
+            max-width: 480px;
+            margin-bottom: 1.8rem;
+            padding: 1.5rem 1.8rem;
+            border-radius: 14px;
+            box-shadow: 0 0 16px #0099ff88, 0 0 2px #09c6f970 inset;
+            position: relative;
+            animation: floatCard 3s ease-in-out infinite alternate;
+            border: 1.5px solid #67e8f920;
+        }
+        @keyframes floatCard {
+            from { transform: translateY(0);}
+            to { transform: translateY(-10px);}
+        }
+        .cert-icon {
+            font-size: 2rem;
+            color: #66ffe4;
+            position: absolute;
+            top: -1.2rem;
+            left: 1.2rem;
+            filter: drop-shadow(0 0 8px #67e8f9);
+        }
+        .cert-title {
+            font-size: 1.32rem;
+            font-weight: bold;
+            color: #fff;
+            margin-left: 2.5rem;
+            margin-bottom: 0.2rem;
+            letter-spacing: 1px;
+        }
+        .cert-desc {
+            color: #bbb;
+            font-size: 1rem;
+            margin-left: 2.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .cert-meta {
+            font-size: 0.9rem;
+            color: #67e8f9;
+            margin-left: 2.5rem;
+        }
+        @media (max-width: 700px) {
+            .cert-card {
+                min-width: 90vw;
+                padding: 1rem 0.6rem;
+                text-align: center;
+            }
+            .cert-title, .cert-desc, .cert-meta {
+                margin-left: 0;
+            }
+            .navbar a {
+                margin: 0 0.5rem;
+                font-size: 1rem;
+                padding: 0.4rem 0.5rem;
+            }
+            .title-jarvis {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="certificate.html" class="active">Certificate</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="presentation.html" class="active">PPT</a>
+    </div>
+
+    <div class="certificate-section">
+        <div class="title-jarvis">Certificates</div>
+
+        <div class="cert-card">
+            <i class="cert-icon fa-brands fa-html5"></i>
+            <div class="cert-title">HTML Fundamentals</div>
+            <div class="cert-desc">Core concepts of HTML for modern web development.</div>
+            <div class="cert-meta">Certified By: FreeCodeCamp<br>Certified Date: Jan 2024</div>
+        </div>
+
+        <div class="cert-card">
+            <i class="cert-icon fa-brands fa-css3-alt"></i>
+            <div class="cert-title">CSS Advanced</div>
+            <div class="cert-desc">Master advanced styling, animation, and layouts using CSS.</div>
+            <div class="cert-meta">Certified By: Coursera<br>Certified Date: Feb 2024</div>
+        </div>
+
+        <div class="cert-card">
+            <i class="cert-icon fa-brands fa-js"></i>
+            <div class="cert-title">JavaScript Essentials</div>
+            <div class="cert-desc">Essential programming knowledge and techniques for web interactivity.</div>
+            <div class="cert-meta">Certified By: Udemy<br>Certified Date: Mar 2024</div>
+        </div>
+
+        <div class="cert-card">
+            <i class="cert-icon fa-brands fa-python"></i>
+            <div class="cert-title">Python For Data Science</div>
+            <div class="cert-desc">A programming language widely used for Data Science and AI.</div>
+            <div class="cert-meta">Certified By: NPTEL<br>Certified Date: Apr 2024</div>
+        </div>
+    </div>
+</body>
+</html>

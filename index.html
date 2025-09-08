@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hari Haran - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+      background: #141e30;
+      background: linear-gradient(120deg, #232526 0%, #141e30 100%);
+      color: #cfd8dc;
+    }
+
+    /* 🔹 Navbar */
+    .navbar {
+      background: rgba(0, 51, 102, 0.95);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      box-shadow: 0 4px 16px rgba(60,180,250,0.08);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .navbar a {
+      color: #67e8f9;
+      text-decoration: none;
+      margin: 0 2rem;
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 10px transparent;
+    }
+    .navbar a:hover {
+      background: #002147;
+      color: #fff;
+      box-shadow: 0 0 18px #09c6f9ad;
+    }
+
+    /* 🔹 About Section */
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 120px 10% 60px;
+    }
+    .about-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(30, 44, 60, 0.9);
+      border-radius: 16px;
+      border: 2px solid #67e8f930;
+      padding: 2rem;
+      box-shadow: 0 0 25px #0099ff44;
+      max-width: 1000px;
+      width: 100%;
+    }
+    .about-text {
+      width: 65%;
+    }
+    .about-text h2 {
+      color: #67e8f9;
+      font-size: 2rem;
+      text-shadow: 0 0 10px #67e8f9;
+    }
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .about-photo {
+      width: 30%;
+      text-align: center;
+    }
+    .about-photo img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid #67e8f9;
+      border-radius: 10px; /* square shape with small rounding */
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.25);
+    }
+    .about-photo h3 {
+      margin-top: 10px;
+      color: #67e8f9;
+    }
+
+    /* 🔹 Resume Section */
+    .resume-section {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .resume-section h2 {
+      color: #67e8f9;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #67e8f9;
+    }
+    .resume-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #67e8f9;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .resume-btn:hover {
+      background: #00cccc;
+      color: #fff;
+      box-shadow: 0 0 10px cyan;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-text, .about-photo {
+        width: 100%;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🔹 Navbar -->
+<div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="certificate.html">Certificate</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="presentation.html" class="active">PPT</a>
+    </div>
+
+  <!-- 🔹 About Section -->
+  <section id="home" class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hello! My name is <b>Hari Haran</b>.</p>
+        <p>I am currently pursuing my <b>B.Sc Computer Science with Artificial Intelligence</b>.  
+        My college is <b>AGURCHAND MANMULL JAIN COLLEGE</b>, located in <b>Chennai, Tamil Nadu</b>.</p>
+        <p>I am passionate about <b>Artificial Intelligence</b> and <b>Natural Language Processing</b>.  
+        My ambition is to become a skilled <b>AI / NLP Engineer</b> in the future.</p>
+        <p>I enjoy building futuristic projects such as smart assistants</p>
+      </div>
+      <div class="about-photo">
+        <img src="C:\Users\r3437\Downloads\WhatsApp Image 2025-09-06 at 11.59.34 AM.jpeg" alt="Hari Haran">
+        <h3>Hari Haran</h3>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

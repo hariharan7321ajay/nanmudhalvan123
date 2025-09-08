@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Jarvis Edition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+            background: #141e30;
+            background: linear-gradient(120deg, #232526 0%, #141e30 100%);
+            color: #cfd8dc;
+        }
+        .navbar {
+            background: rgba(0, 51, 102, 0.95);
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            box-shadow: 0 4px 16px rgba(60,180,250,0.08);
+        }
+        .navbar a {
+            color: #67e8f9;
+            text-decoration: none;
+            margin: 0 2rem;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 10px transparent;
+        }
+        .navbar a:hover {
+            background: #002147;
+            color: #fff;
+            box-shadow: 0 0 18px #09c6f9ad;
+        }
+        .contact-card {
+            background: rgba(30,44,60,0.96);
+            max-width: 600px;
+            margin: 4rem auto;
+            padding: 2rem 2rem 1.2rem 2rem;
+            border-radius: 16px;
+            box-shadow: 0 0 36px #0099ff55;
+            border: 2px solid #67e8f930;
+            animation: floatCard 3s ease-in-out infinite alternate;
+        }
+        @keyframes floatCard {
+            from { transform: translateY(0);}
+            to { transform: translateY(-8px);}
+        }
+        .contact-title {
+            font-size: 2.2rem;
+            color: #67e8f9;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 16px #67e8f9;
+            animation: glowTitle 2s ease-in-out infinite alternate;
+        }
+        @keyframes glowTitle {
+            from { text-shadow: 0 0 8px #09c6f9, 0 0 20px #67e8f980;}
+            to { text-shadow: 0 0 24px #66ffe4, 0 0 40px #66ffe455;}
+        }
+        .info-row {
+            margin-bottom: 1.2rem;
+            font-size: 1.13rem;
+            display: flex;
+            align-items: center;
+            padding: 0.6rem;
+            border-radius: 10px;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .info-row:hover {
+            background: rgba(0,153,255,0.1);
+            box-shadow: 0 0 12px #09c6f955;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #67e8f9;
+            letter-spacing: 1px;
+            margin-right: 0.5rem;
+        }
+        .contact-icons {
+            margin-right: 0.7rem;
+            color: #12d8fa;
+            font-size: 1.18rem;
+            vertical-align: middle;
+            filter: drop-shadow(0 0 6px #67e8f9);
+        }
+        a.contact-link {
+            color: #cfd8dc;
+            text-decoration: none;
+        }
+        a.contact-link:hover {
+            color: #66ffe4;
+            text-shadow: 0 0 6px #09c6f9;
+        }
+        @media (max-width: 700px) {
+            .contact-card {
+                margin: 1.5rem;
+                padding: 1rem 0.7rem;
+            }
+            .navbar a {
+                margin: 0 0.6rem;
+                font-size: 1rem;
+                padding: 0.4rem 0.5rem;
+            }
+            .contact-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="certificate.html">Certificate</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="presentation.html" class="active">PPT</a>
+    </div>
+    <div class="contact-card">
+        <div class="contact-title">Get in Touch</div>
+        <div class="info-row">
+            <span class="contact-icons"><i class="fas fa-envelope"></i></span>
+            <span class="info-label">Email:</span>
+            <a class="contact-link">24ai024@amjaincollege.edu.in</a>
+        </div>
+        <div class="info-row">
+            <span class="contact-icons"><i class="fas fa-phone"></i></span>
+            <span class="info-label">Phone:</span>
+            <a class="contact-link" href="tel:+917550359290">+91 75503 59290</a>
+        </div>
+        <div class="info-row">
+            <span class="contact-icons"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="info-label">Location:</span>
+            <a class="contact-link" href="https://www.google.com/maps/place/Chennai,+Tamil+Nadu,+India" target="_blank">Chennai, Tamil Nadu, India</a>
+        </div>
+        <div class="info-row">
+            <span class="contact-icons"><i class="fab fa-github"></i></span>
+            <span class="info-label">GitHub:</span>
+            <a class="contact-link" target="_blank">hariharan7321ajay</a>
+        </div>
+    </div>
+</body>
+</html>
